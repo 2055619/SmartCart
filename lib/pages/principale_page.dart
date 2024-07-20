@@ -9,7 +9,7 @@ import 'package:liste_epicerie/pages/maliste_page.dart';
 import 'package:liste_epicerie/widgets/menugauche_widget.dart';
 
 class Principale extends StatefulWidget {
-  Principale({Key? key}) : super(key: key);
+  const Principale({Key? key}) : super(key: key);
 
   static const routeName = "/principale";
 
@@ -30,14 +30,14 @@ class _PrincipaleState extends State<Principale> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("SmartGrocery"),
+        title: const Text("SmartCart"),
         actions: [
           DropdownButton<String>(
               icon: Icon(
                 Icons.more_vert,
                 color: Theme.of(context).primaryIconTheme.color,
               ),
-              items: [
+              items: const [
                 DropdownMenuItem(
                   value: "logout",
                   child: Row(
@@ -61,7 +61,7 @@ class _PrincipaleState extends State<Principale> {
               })
         ],
       ),
-      drawer: Drawer(
+      drawer: const Drawer(
         child: MenuGauche(),
       ),
       backgroundColor: Colors.grey[200],
@@ -75,7 +75,7 @@ class _PrincipaleState extends State<Principale> {
             Navigator.of(context).pushNamed(FaireEpicerie.routeName);
           }
         },
-        child: currentIndex == 0 ? Icon(Icons.add) : Icon(Icons.shopping_bag_outlined),
+        child: currentIndex == 0 ? const Icon(Icons.add) : const Icon(Icons.shopping_bag_outlined),
       ) : null,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,

@@ -37,12 +37,13 @@ class ListeArticle extends StatelessWidget {
                     key: ValueKey(Article.fromMap(myData.docs[index].data()).id),
                     confirmDismiss: (direction) async {
                       Provider.of<ArticleUsage>(context, listen: false).addArticle(Article.fromMap(myData.docs[index].data()));
+                      return null;
                     },
                     direction: DismissDirection.endToStart,
                     background: Container(
                       color: Colors.green,
                       alignment: Alignment.centerRight,
-                      child: Icon(
+                      child: const Icon(
                         Icons.add,
                         color: Colors.white,
                       ),

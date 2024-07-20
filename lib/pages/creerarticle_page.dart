@@ -9,7 +9,7 @@ import 'package:liste_epicerie/widgets/articleform_widget.dart';
 import 'package:provider/provider.dart';
 
 class CreerArticle extends StatefulWidget {
-  CreerArticle({Key? key}) : super(key: key);
+  const CreerArticle({Key? key}) : super(key: key);
 
   static const routeName = "/creerarticle";
 

@@ -42,7 +42,7 @@ class ArticleWidget extends StatelessWidget {
                       style: Theme.of(context).textTheme.headline6,
                     ),
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Text(
@@ -50,7 +50,7 @@ class ArticleWidget extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodyText2,
                     ),
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Text(
@@ -58,7 +58,7 @@ class ArticleWidget extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodyText2,
                     ),
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                 ],
               ),
             ),

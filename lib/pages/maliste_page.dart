@@ -53,7 +53,7 @@ class _ListeUsageState extends State<ListeUsage> {
                     background: Container(
                       color: Colors.red,
                       alignment: Alignment.centerRight,
-                      child: Icon(
+                      child: const Icon(
                         Icons.delete,
                         color: Colors.white,
                       ),

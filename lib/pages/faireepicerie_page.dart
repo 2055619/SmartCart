@@ -26,7 +26,7 @@ class _FaireEpicerieState extends State<FaireEpicerie> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'SmartGrocery',
+      title: 'SmartCart',
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
@@ -39,7 +39,7 @@ class _FaireEpicerieState extends State<FaireEpicerie> {
                 Icons.more_vert,
                 color: Colors.white,
               ),
-              items: [
+              items: const [
                 DropdownMenuItem(
                   value: "retour",
                   child: Row(

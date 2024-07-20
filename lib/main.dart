@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp> {
 
         if (snapshot.hasData){
           return MaterialApp(
-            title: 'SmartGrocery',
+            title: 'SmartCart',
             home: MultiProvider(
               providers: [
                 ChangeNotifierProvider(
@@ -52,13 +52,13 @@ class _MyAppState extends State<MyApp> {
                   create: (context) => ArticleUsage(),
                 ),
               ],
-              child: MyHomePage(),
+              child: const MyHomePage(),
             ),
           );
         }
 
         return MaterialApp(
-          title: 'SmartGrocery',
+          title: 'SmartCart',
           theme: ThemeData(
             primarySwatch: Colors.deepOrange,
           ),
@@ -94,11 +94,11 @@ class _MyHomePageState extends State<MyHomePage> {
           return ChangeNotifierProvider(
             create: (context) => ArticlesGlobaux(),
             child: MaterialApp(
-              title: 'SmartGrocery',
+              title: 'SmartCart',
               theme: ThemeData(
                 primarySwatch: Colors.deepOrange,
               ),
-              home: Center(
+              home: const Center(
                 child: FaireEpicerie(),
               ),
             ),
@@ -107,18 +107,18 @@ class _MyHomePageState extends State<MyHomePage> {
 
         if (snapshot.hasError) {
           return MaterialApp(
-            title: 'SmartGrocery',
+            title: 'SmartCart',
             theme: ThemeData(
               primarySwatch: Colors.deepOrange,
             ),
-            home: Center(
+            home: const Center(
               child: Text("PROBLEME!!!"),
             ),
           );
         }
 
         return MaterialApp(
-          title: 'SmartGrocery',
+          title: 'SmartCart',
           theme: ThemeData(
             primarySwatch: Colors.deepOrange,
           ),
@@ -127,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
             CreerArticle.routeName: (context) => CreerArticle(),
             Principale.routeName: (context) => Principale(),
             JoinGroupe.routeName: (context) => JoinGroupe(),
-            FaireEpicerie.routeName: (context) => FaireEpicerie(),
+            FaireEpicerie.routeName: (context) => const FaireEpicerie(),
           },
         );
       }

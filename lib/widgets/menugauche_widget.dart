@@ -18,7 +18,7 @@ class MenuGauche extends StatelessWidget {
               color: Colors.deepOrange,
             ),
             child: Text(
-              'SmartGrocery',
+              'SmartCart',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 24,
