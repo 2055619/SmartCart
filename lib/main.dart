@@ -124,8 +124,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           home: Principale(),
           routes: {
-            CreerArticle.routeName: (context) => CreerArticle(),
-            Principale.routeName: (context) => Principale(),
+            CreerArticle.routeName: (context) => const CreerArticle(),
+            Principale.routeName: (context) => const Principale(),
             JoinGroupe.routeName: (context) => JoinGroupe(),
             FaireEpicerie.routeName: (context) => const FaireEpicerie(),
           },
